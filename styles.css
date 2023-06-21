@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import '/fonts.css';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #121212;
+}
+
+.container {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  border: 1px solid white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+}
+
+.coun {
+  display: inline-block;
+  font-family: "DS Digital", sans-serif;
+  color: #cd0000;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 3vh;
+}
+
+.btn-group {
+  padding: 5vh;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  display: inline-block;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.317rem;
+  background-color: #aaa;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-left: 2rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.watch-border {
+  border-radius: 100%;
+  background: #ffffff;
+  font-family: "Montserrat";
+  border: 5px solid white;
+  box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.wrap {
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+
+#rotatemin,
+#rotatehr {
+  position: absolute;
+  height: 100px;
+  width: 6px;
+  margin: auto;
+  top: -27%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 238, 255, 0.9333333333);
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+#rotatemin {
+  position: absolute;
+  height: 100px;
+  width: 4px;
+  top: -38%;
+  left: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+#rotate {
+  position: absolute;
+  height: 100px;
+  width: 2px;
+  margin: auto;
+  top: -36%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 4px;
+  background: #FF4B3E;
+  transform-origin: bottom center;
+  z-index: 1;
+}
+
+.dot {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 100px;
+  background: white;
+  border: 2px solid #1b1b1b;
+  border-radius: 100px;
+  margin: auto;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 850px) {
+  .main-container {
+    width: 100%;
+  }
+  .main-container h2 {
+    font-size: 1.5rem;
+  }
+  .btn-group {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}/*# sourceMappingURL=styles.css.map */

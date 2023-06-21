@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import '/fonts.css';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #121212;
+}
+.container{
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container{
+  border: 1px solid white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+  }
+}
+.coun{
+  display: inline-block;
+  font-family: "DS Digital", sans-serif;
+  color: #cd0000;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 3vh;
+}
+.btn-group{
+  padding: 5vh;
+  font-family: 'Poppins', sans-serif;
+}
+button{
+  display: inline-block;
+  margin: 0;
+  padding: 0.75rem 1rem;
+	border: 0;
+	border-radius: 0.317rem;
+	background-color: #aaa;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.2rem;
+  line-height: 1.5;
+  margin-left: 2rem;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	cursor: pointer;
+}button:hover{
+  opacity: 0.85;
+}
+// #rotate, #rotatemin, #rotatehr{
+//   position: absolute;
+//     border-radius: 10px;
+//     transform-origin: bottom;
+//     background-color: red;
+// }
+// .watch-border{
+//   position: relative;
+//   height: 230px;
+//     width: 241px;
+//   border: 4px solid white;
+//   border-radius: 50%;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   #rotate{
+//     width: 1.8%;
+//     height: 40%;
+//     top: 9%;
+//     left: 49.25%;
+//   }
+//   #rotatemin{
+//     width: 1.6%;
+//     height: 30%;
+//     top: 19%;
+//     left: 48.9%;
+//   }
+//   #rotatehr{
+//     width: 1.8%;
+//     height: 25%;
+//     top: 25%;
+//     left: 48.85%;
+//   }
+// }
+
+// .watch-border {
+//   background: transparent;
+//   width: 300px;
+//   height: 300px;
+//   margin: 8% auto 0;
+//   border-radius: 50%;
+//   border: 6px solid #333;
+//   position: relative;
+//   box-shadow: 0 2vw 4vw -1vw rgba(0,0,0,0.8);
+// }
+
+// .dot {
+//   position: absolute;
+//   top: 0;
+//   left: 2%;
+//   right: 0;
+//   bottom: 0;
+//   width: 18px;
+//   height: 18px;
+//   border-radius: 100px;
+//   background: white;
+//   border: 2px solid #1b1b1b;
+//   border-radius: 100px;
+//   margin: auto;
+//   z-index: 20;
+// }
+
+// #rotatehr {
+//   position: absolute;
+//   z-index: 5;
+//   width: 4px;
+//   height: 65px;
+//   background: #393939;
+//   top: 79px;
+//   transform-origin: 50% 72px;
+//   left: 50%;
+//   margin-left: -2px;
+//   border-top-left-radius: 50%;
+//   border-top-right-radius: 50%;
+// }
+
+// #rotatemin {
+//   position: absolute;
+//   z-index: 6;
+//   width: 4px;
+//   height: 90px;
+//   background: #393939;
+//   top: 46px;
+//   left: 50%;
+//   margin-left: -2px;
+//   border-top-left-radius: 50%;
+//   border-top-right-radius: 50%;
+//   transform-origin: 50% 105px;
+// }
+
+// #rotate{
+//   position: absolute;
+//   height: 90px;
+//   width: 2px;
+//   margin: auto;
+//   top: -26%;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   border-radius: 4px;
+//   background: #FF4B3E;
+//   transform-origin: bottom center;
+//   z-index: 1;
+// }
+
+
+
+.watch-border {
+  border-radius: 100%;
+  background: #ffffff;
+  font-family: "Montserrat";
+  border: 5px solid white;
+  box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.wrap {
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+
+#rotatemin,
+#rotatehr {
+  position: absolute;
+  height: 100px;
+  width: 6px;
+  margin: auto;
+  top: -27%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fefe;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+#rotatemin {
+  position: absolute;
+  height: 100px;
+  width: 4px;
+  top: -38%;
+  left: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+#rotate {
+  position: absolute;
+  height: 100px;
+  width: 2px;
+  margin: auto;
+  top: -36%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 4px;
+  background: #FF4B3E;
+  transform-origin: bottom center;
+  z-index: 1;
+}
+
+.dot {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 100px;
+  background: white;
+  border: 2px solid #1b1b1b;
+  border-radius: 100px;
+  margin: auto;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 850px){
+  .main-container{
+    width: 100%;
+    h2{
+      font-size: 1.5rem;
+    }
+  }
+  .btn-group{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}

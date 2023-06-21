@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <div class="main-container">
+        <h2>Stopwatch</h2>
+        <div class="outer-box">
+          <h1 id="hr" class="coun">0:</h1>
+          <h1 id="mi" class="coun">0:</h1>
+          <h1 id="se" class="coun">0</h1>
+        </div>
+        <div class="btn-group">
+            <button  onclick="startTimer()">Start</button>
+            <button  onclick="resetTimer()">Reset</button>
+            <button  onclick="stopTimer()">Stop</button>
+        </div>
+        <section class="analog">
+            <div class="watch-border">
+                <div class="wrap">
+                  <span id="rotatehr"></span>
+                  <span id="rotatemin"></span>
+                  <span id="rotate"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+        </section>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
