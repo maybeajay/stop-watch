@@ -7,7 +7,7 @@ let degree =0;
 let degreemin =0;
 let degreehr=0; 
 let min = 0, hr = 0;
-let myInterval = 0,value = 57;
+let myInterval = 0,value = 0;
 const startTimer = () => {
   myInterval = setInterval(() => {
     seconds.innerHTML = value++;
@@ -19,9 +19,10 @@ const startTimer = () => {
       min++;
       minutes.innerHTML = min +":";
     } 
-    if (min>=60) {
-      hr++;
+    if (min==60) {
       min = 0;
+      minutes.innerHTML = min +":";
+      hr++;
       hours.innerHTML = hr+":";
     }
     degreemin=min*6;
